@@ -24,7 +24,6 @@ private ModelMapper modelMapper;
 
     @Override
     public RoleDto create(RoleDto role) {
-        // TODO Auto-generated method stub
         Role roleEntity = modelMapper.map(role, Role.class);
         roleRepo.save(roleEntity);
         return modelMapper.map(roleEntity, RoleDto.class);

@@ -66,5 +66,10 @@ public class EmployeeJpaRepositoryTest {
         assertEquals(2, repoEmpl.findAll().size());
         assertEquals(admin, empl124.getRole());
 
+        
+        repoEmpl.delete(empl124);
+
+        repoEmpl.toString();
+
     }
 }
