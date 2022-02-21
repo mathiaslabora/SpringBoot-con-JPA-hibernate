@@ -65,11 +65,5 @@ public class EmployeeJpaRepositoryTest {
         assertEquals("Claire", empl124.getFirstName());
         assertEquals(2, repoEmpl.findAll().size());
         assertEquals(admin, empl124.getRole());
-
-        
-        repoEmpl.delete(empl124);
-
-        repoEmpl.toString();
-
     }
 }
