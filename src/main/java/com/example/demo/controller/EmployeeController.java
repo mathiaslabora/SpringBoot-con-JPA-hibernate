@@ -29,7 +29,7 @@ public class EmployeeController {
     @Autowired
     IEmployeeJpaRepository iEmployeeJpaRepository;
 
-    // obtener por id
+    // obtener todos
     @GetMapping("/employee/all")
     public ResponseEntity<List<Employee>> getAllEmployee() {
         try {
